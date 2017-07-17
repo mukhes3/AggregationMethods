@@ -1,3 +1,7 @@
+---
+typora-copy-images-to: ./
+---
+
 # AggregationMethods
 This library contains various consensus and correlation clustering algorithms. The different methods covered in the library so far are: 
 
@@ -67,4 +71,4 @@ title('CombinedClusteringWithReps')
 
 Resulting clustering figures: 
 
-![ClusteringExamplesIris](E:\UWPhDWork\AggregationMethods\ClusteringExamplesIris.png)
+![ClusteringExamplesIris](ClusteringExamplesIris.png)
