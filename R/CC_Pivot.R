@@ -34,6 +34,7 @@ CC.Pivot <- function(G){
     
   }
   
+  #print(C)
   
   n <- sqrt(length(Ep))
   
@@ -50,5 +51,5 @@ CC.Pivot <- function(G){
     return(list(C))
   }
   
-  return( c(C, Gret))
+  return( c(list(C), Gret))
 }  

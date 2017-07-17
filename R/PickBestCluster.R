@@ -15,8 +15,7 @@ PickBestCluster <- function(InstanceList){
     
     d <- 0 
     
-    for (j in 1:l)
-      
+    for (j in 1:l){
       if (i != j){
         C_i <- InstanceList[[i]]
         C_j <- InstanceList[[j]]
@@ -24,6 +23,9 @@ PickBestCluster <- function(InstanceList){
         d <- d + dt 
         
       }
+      
+    }
+      
     
     if (d <= dBest){ 
       BestClustering <- InstanceList[[i]]

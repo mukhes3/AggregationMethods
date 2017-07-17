@@ -20,9 +20,9 @@ CombinedClusteringWithReps <- function(InstanceList, Reps){
   }
   
   G <- Corr2Cons(InstanceList)
+  G <- G$G
   
-  dBest <- Inf 
-  
+
   N <- length(C_1)
   
   for (i in 1:Reps){ 

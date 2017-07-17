@@ -18,8 +18,12 @@
      
      d1 <- d1 +  GetClusterDistance(Clust1,InstanceList[[i]])
      d2 <- d2 +  GetClusterDistance(Clust2,InstanceList[[i]])     
-     
-     }
+   }
+   
+   #print('bla')
+   #print(d1)
+   #print(d2)
+   
    
    if (d1 <= d2){
      return(Clust1)

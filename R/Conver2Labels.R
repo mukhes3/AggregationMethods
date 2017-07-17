@@ -15,7 +15,7 @@ Convert2Labels <- function(Instance, N){
   for (i in 1:l){
     if(length(Instance[[i]])>0){
 
-      Lab[[Instance[[i]]]] = i
+      Lab[Instance[[i]]] = i
 
     }
 
