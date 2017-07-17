@@ -13,8 +13,12 @@ Convert2Labels <- function(Instance, N){
   Lab <- rep(0, N)
   
   for (i in 1:l){
-    
-    Lab[[Instance[[i]]]] = i
+    if(length(Instance[[i]])>0){
+
+      Lab[[Instance[[i]]]] = i
+
+    }
+
   }
   
   return(Lab)

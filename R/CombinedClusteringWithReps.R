@@ -23,7 +23,7 @@ CombinedClusteringWithReps <- function(InstanceList, Reps){
   
   dBest <- Inf 
   
-  N <- max(C_1)
+  N <- length(C_1)
   
   for (i in 1:Reps){ 
     
