@@ -6,3 +6,16 @@ This library contains various consensus and correlation clustering algorithms. T
 2. **PickBestCluster:** Given a set of clusterings, this picks the clustering that has the lowest total distance from the other clusterings. 
 3. **BestOfTwo:** Compares two consensus clusterings by computing their distance from all of the given clusterings and then picks the consensus clustering with the lower total distance. 
 4. **CombinedClusteringWithReps:** This is a clustering method that runs the BestOfTwo method for several iterations, keeping the cluster with the lowest total distance. The CC-Pivot algorithm is run at each iteration. 
+
+
+
+### Installation: 
+
+```R
+install.packages('devtools') #if devtools isn't already installed
+library(devtools)
+install_github('mukhes3/AggregationMethods')
+```
+
+
+
