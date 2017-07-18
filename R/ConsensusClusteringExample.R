@@ -24,7 +24,7 @@ ConsensusClusteringExample <- function(){
   G <- Temp$G
   N <- length(iris[,3])
   
-  par(mfrow=c(2,2))
+  par(mfrow=c(2,3))
   
   #Plotting true clusters based on species
   cat('Plotting true clusters based on species \n')
@@ -43,7 +43,7 @@ ConsensusClusteringExample <- function(){
   C_2 <- Convert2Labels(CC.Pivot(G),N)
   C_2 <- as.factor(C_2)
   plot(iris[,3],iris[,4], col = C_2)
-  title('CC-Pilot clusters')
+  title('CC-Pivot clusters')
   
   #Performing CombinedClusteringWithReps
   cat('Performing CombinedClusteringWithReps, reps = 10 \n')
@@ -51,6 +51,13 @@ ConsensusClusteringExample <- function(){
   C_3 <- as.factor(C_3)
   plot(iris[,3],iris[,4], col = C_3)
   title('CombinedClusteringWithReps')
+  
+  #Performing BestOneElementMove
+  cat('Performing BestOneElementMove \n')
+  C_4 <- BestOneElementMove(G$Ep, InstanceList, C_1)
+  C_4 <- as.factor(C_4)
+  plot(iris[,3],iris[,4], col = C_4)
+  title('BestOneElementMove')
   
   return(NULL)
   
