@@ -4,10 +4,10 @@
 \alias{BestOneElementMove}
 \title{BestOneElementMove}
 \usage{
-BestOneElementMove(Ep, InstanceList, C)
+BestOneElementMove(Wp, InstanceList, C)
 }
 \arguments{
-\item{Ep}{positive consensus matrix from CC-Pivots initialization}
+\item{Wp}{positive consensus matrix from CC-Pivots initialization}
 
 \item{InstanceList}{List of clustering instances}
 

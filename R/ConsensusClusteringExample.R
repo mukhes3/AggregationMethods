@@ -54,7 +54,7 @@ ConsensusClusteringExample <- function(){
   
   #Performing BestOneElementMove
   cat('Performing BestOneElementMove \n')
-  C_4 <- BestOneElementMove(G$Ep, InstanceList, C_1)
+  C_4 <- BestOneElementMove(Temp$Wp, InstanceList, C_1)
   C_4 <- as.factor(C_4)
   plot(iris[,3],iris[,4], col = C_4)
   title('BestOneElementMove')

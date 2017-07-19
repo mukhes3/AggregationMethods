@@ -21,6 +21,6 @@ Cluster2Adj <- function(ClusterList){
   #     
   #   }
     
-  }
+  #}
   return(Adj)
 }
