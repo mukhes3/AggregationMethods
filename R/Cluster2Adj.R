@@ -8,17 +8,18 @@ Cluster2Adj <- function(ClusterList){
   
   n <- length(ClusterList)
   
-  Adj <- matrix(0,n,n)
-  
-  for (i in 1:n){ 
-    
-    for (j in 1:n){ 
-      
-      if (ClusterList[i] == ClusterList[j]){
-        Adj[i,j] <- 1
-      }
-      
-    }
+  Adj <- outer(1:n, 1:n , FUN=function(r,c) (ClusterList[r] == ClusterList[c])*1)
+  # Adj <- matrix(0,n,n)
+  # 
+  # for (i in 1:n){ 
+  #   
+  #   for (j in 1:n){ 
+  #     
+  #     if (ClusterList[i] == ClusterList[j]){
+  #       Adj[i,j] <- 1
+  #     }
+  #     
+  #   }
     
   }
   return(Adj)

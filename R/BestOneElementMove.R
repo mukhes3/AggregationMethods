@@ -2,14 +2,14 @@
 #' 
 #' Performs Best one element move algorithm 
 #' 
-#' @param Ep positive consensus matrix from CC-Pivots initialization 
+#' @param Wp positive consensus matrix from CC-Pivots initialization 
 #' @param InstanceList List of clustering instances 
 #' @param C Initial clustering 
 
-BestOneElementMove <- function(Ep, InstanceList,C){
+BestOneElementMove <- function(Wp, InstanceList,C){
 
   k <- length(InstanceList)
-  A <- Ep
+  A <- Wp*k
   S <- 0 
   N <- length(A[,1])
   
