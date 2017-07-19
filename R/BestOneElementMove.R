@@ -9,7 +9,7 @@
 BestOneElementMove <- function(Ep, InstanceList,C){
 
   k <- length(InstanceList)
-  A <- Ep*k  
+  A <- Ep
   S <- 0 
   N <- length(A[,1])
   
