@@ -4,7 +4,7 @@
 \alias{BestOneElementMove}
 \title{BestOneElementMove}
 \usage{
-BestOneElementMove(Wp, InstanceList, C)
+BestOneElementMove(Wp, InstanceList, C, MaxSteps)
 }
 \arguments{
 \item{Wp}{positive consensus matrix from CC-Pivots initialization}
